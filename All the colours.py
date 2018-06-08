@@ -2,16 +2,10 @@ import pyautogui as pag
 import win32api
 from tkinter import *
 import webcolors
- 
-'''
-def onClick(x, y):
-	rgb = pag.pixel(x, y)
-	return rgb
-'''
+import tkcolorpicker as askcolor
 
 
 state_left = win32api.GetKeyState(0x01)  # Left button down = 0 or 1. Button up = -127 or -128
-
 
 while True:
 	a = win32api.GetKeyState(0x01)
@@ -22,7 +16,6 @@ while True:
 		x, y = win32api.GetCursorPos()
 		rgb = pag.pixel(x, y)
 
-		#rgb = onClick(x, y)
 		break
 
 Hex = webcolors.rgb_to_hex(rgb)
@@ -54,4 +47,3 @@ text.grid(row=1, column=1)#, sticky='n')
 
 
 window.mainloop()
-
