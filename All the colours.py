@@ -114,20 +114,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# Canvas(root, width=90, height=90, bg=Hex).grid(row=1, column=0)
-#
-# Button(root, text='Shades', width=14, command=Shades_win).grid(row=3, column=1)
-#
-#
-# text = Text(root, width=60, height=6, bg='#f0f0f0')
-# text.insert('1.0', 'Rgb value is: {}. The Hex value is: {}'.format(rgb, Hex))
-# text['state'] = DISABLED
-# text.grid(row=1, column=1)
-#
-#
-# root.mainloop()
-#
-# Label(root, text=(''), font='none 12 bold', bg=Hex). grid(row=1, column=0, sticky='w')
-#
-# Button(root, text="", width=14, bg=Hex) .grid(row=1, column=0, sticky=W)
